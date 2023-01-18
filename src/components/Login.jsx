@@ -58,7 +58,7 @@ async function signInAsGuess () {
   return (
     <>
     <chakra.div className='bg' fontFamily='Comfortaa, cursive'>
-    <chakra.div w={{lg: '45%', base: "350px"}} className='form' mt={40} zIndex='50'>
+    <chakra.div w={{lg: '45%', base: "350px"}} className='form' mt={52} zIndex='50'>
       <chakra.h1 m={10} color='Black' fontWeight='bold' fontSize={{lg: 32, base: 22}} className='login-title'>Welcome to Libello!</chakra.h1>
       <form onSubmit={submitHandler}>
         <chakra.button type='button' bg='gray.400' className="button-container-google" onClick={() => signInWithRedirect(auth, googleProvider)}>

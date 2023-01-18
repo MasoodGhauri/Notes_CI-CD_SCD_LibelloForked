@@ -13,8 +13,6 @@ import {
   ModalCloseButton,
   useDisclosure,
   Button,
-  Circle,
-  FormControl,
   FormLabel,
   Input
 } from '@chakra-ui/react'

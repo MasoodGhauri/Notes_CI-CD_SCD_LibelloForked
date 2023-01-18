@@ -91,7 +91,7 @@ const btnRef = React.useRef()
 
 return (
 	<>
-	<img className='profile-img' referrerPolicy='no-referrer' src={uid? uid : "https://www.pngitem.com/pimgs/m/111-1114675_user-login-person-man-enter-person-login-icon.png"} alt="" />
+	<img className='profile-img' referrerPolicy='no-referrer' src={uid? uid : "https://cdn-icons-png.flaticon.com/512/6073/6073873.png" } alt="" />
 	<hr />
 	<Box mt={10} ml={4} >
 	<motion.div

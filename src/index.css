@@ -123,7 +123,6 @@
     font-weight: bold;
     background-color: transparent;
     color: white;
-    text-decoration: underline;
     cursor: pointer;
     transition: 300ms;
 }
