@@ -123,7 +123,7 @@ animate='visible'
 >
 
         <chakra.div className='mobile-nav-bar'
-        w={{lg: 36, base: '100vw'}} position={{lg: 'absolute'}} h={{lg:'100vh', base: '11vh'}} border='1px' borderColor='var(--border)' p={5} borderRadius='5px'>
+        w={{lg: 36, base: '100vw'}} position={{lg: 'absolute'}} h={{lg:'100vh', base: '9vh'}} border='1px' borderColor='var(--border)' p={5}>
         <Heading as='h1' mt={{base:2, lg: '0'}} ml={3} size={{lg: 'sm', base: 'md'}} color='var(--title-color)' letterSpacing={1} textShadow='var(--title-shadow)' fontFamily='var(--font-family)'display='flex' >
             Libello
             <Icon as={SlNotebook} mt={{lg:'0', base: 1}} h={4} w={4} ml={2} color='var(--title-color)' ></Icon>

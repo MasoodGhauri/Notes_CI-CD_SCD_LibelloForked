@@ -28,7 +28,7 @@ const buttonVariant = {
     initial: { opacity: 0, x: 1000},
     visible: { opacity: 1, x: 0,
     transition: {
-      duration: 0.5, ease: 'easeIn'
+      duration: 0.2, ease: 'easeIn'
     }
     }
   }
@@ -45,16 +45,20 @@ const MenuMobile = ({ userEmail, uid, notes, setNotes, setShowMenu}) => {
 
   
   return (
+<>
+
+<div className='wrapper' onClick={()=> setShowMenu(false)}/> 
+
 	<motion.div
   variants={menuShowVariant}
   initial='initial'
   animate='visible'
   >
 
-<Box className='mobile-menu' display={{ lg: 'none'}} mt={{lg:'0', base: '-8vh'}} border={{base: '1px', lg: 'none'}} bg={{base: 'var(--bg-color)'}} p={{base:2, lg: '0'}} right={{base: 0, lg: '0'}} position={{base: 'absolute', lg: 'relative'}} >
+<Box className='mobile-menu' h={'100vh'} display={{ lg: 'none'}} top={0} border={{base: '1px', lg: 'none'}} bg={{base: 'var(--bg-color)'}} p={{base:4, lg: '0'}} right={{base: 0, lg: '0'}} position={{base: 'absolute', lg: 'relative'}} >
 
-<Icon as={IoClose} display={{lg: 'none'}} w={9} h={9} ml={7} mt={{base: 5}} onClick={()=> setShowMenu(false)}></Icon>
-          <Box mt={{base: '-50px'}}>
+<Icon as={IoClose} display={{lg: 'none'}} w={9} h={9} ml={7} mt={{base: 2}} onClick={()=> setShowMenu(false)}></Icon>
+          <Box mt={{base: '-20px'}}>
             <ProfilePicAndTheme uid={uid}/>
           </Box>
         <Box mb={60}>
@@ -70,10 +74,11 @@ const MenuMobile = ({ userEmail, uid, notes, setNotes, setShowMenu}) => {
         initial='hidden'
         whileHover='hover'
         >
-        <Button size='sm' mt={{base:'-10vh', lg: '1px'}} bg='var(--icon-color)' color='var(--bg-color)' _hover={{background: 'var(--icon-shadow-color)'}}  ml={{lg: 2}} onClick={()=> signOut(auth)}>Sign Out</Button>
+        <Button size='sm' mt={{base:'20vh', lg: '1px'}} bg='var(--icon-color)' color='var(--bg-color)' _hover={{background: 'var(--icon-shadow-color)'}}  ml={{lg: 2}} onClick={()=> signOut(auth)}>Sign Out</Button>
         </motion.div>
         </Box> 
 	</motion.div>
+  </>
   )
 }
 

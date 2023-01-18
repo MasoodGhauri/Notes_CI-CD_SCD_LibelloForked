@@ -11,6 +11,7 @@
     --theme-bg: none;
     --font-family: sans-serif;
     --border-radius: 10px;
+    --bg-wrapper: rgba(0,0,0, 0.4);
 }
 
 .body {
@@ -29,6 +30,19 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+.wrapper{
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   z-index: 50;
+   margin-top: -10rem;
+   padding-bottom: 80rem;
+   padding-left: 80rem;
+   margin-left: -100px;
+   background: var(--bg-wrapper);
 }
 
 .form {

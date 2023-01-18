@@ -89,14 +89,14 @@ return (
   
       <Modal isOpen={isOpen} onClose={onClose} >
         <ModalOverlay />
-        <ModalContent bg='var(--bg-color)' border='1px' borderColor='var(--title-color)'>
+        <ModalContent bg='var(--bg-color)' mx={{base:2, lg: '0'}} mt={44} border='1px' borderColor='var(--title-color)'>
           <ModalHeader>New Note:</ModalHeader>
           <ModalCloseButton />
           <form onSubmit={handleForm}>
           <ModalBody>
           
-          <FormLabel htmlFor='formId'>Note:</FormLabel>
-          <Input type='text'mt={5} placeholder='Reminder' borderColor='var(--title-color)' id='formId'autoComplete="off" />
+          <FormLabel htmlFor='formId'></FormLabel>
+          <Input type='text'mt={5} placeholder='Note' borderColor='var(--title-color)' id='formId'autoComplete="off" />
           </ModalBody>
 
           <ModalFooter mt={10}>
