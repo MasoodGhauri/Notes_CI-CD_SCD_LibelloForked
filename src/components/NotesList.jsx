@@ -78,7 +78,7 @@ async function handleDeleteNote(noteId) {
         <Box className='note' position='relative' bg='var(--note-color)' shadow='var(--note-shadow)' cursor='pointer' color='var(--note-text-color)' border='1px' borderColor='var(--border-color)' p={5} borderRadius='var(--border-radius)' m={{lg: 5, base: 1}}  w={{lg:'220px', base: '330px'}} h={{lg:'220px', base:'auto'}} ml={{lg: '0', base: '-17px'}} role='group'>
 
 
-        <Icon as={BiX} display='none' opacity={0.3}  _groupHover={{ display: 'block'  }} w={8} h={8} color='var(--icon-color)' mt='-15px' right={{lg: 6, base: 1}} cursor='pointer'position='absolute'
+        <Icon as={BiX} display='none' opacity={0.3}  _groupHover={{ display: 'block'  }} w={8} h={8} color='var(--icon-color)' mt='-15px' right={{lg: 1, base: 1}} cursor='pointer'position='absolute'
         onClick={()=> handleDeleteNote(note.id)}
         ></Icon>
 
