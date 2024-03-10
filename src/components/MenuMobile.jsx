@@ -74,7 +74,7 @@ const MenuMobile = ({ userEmail, uid, notes, setNotes, setShowMenu}) => {
         initial='hidden'
         whileHover='hover'
         >
-        <Button size='sm' bottom={20} position='absolute'   bg='var(--icon-color)' color='var(--bg-color)' _hover={{background: 'var(--icon-shadow-color)'}}  right='3' onClick={()=> signOut(auth)}>Sign Out</Button>
+        <Button size='sm' bottom={10} position='absolute'   bg='var(--icon-color)' color='var(--bg-color)' _hover={{background: 'var(--icon-shadow-color)'}}  right='3' onClick={()=> signOut(auth)}>Sign Out</Button>
         </motion.div>
         </Box> 
 	</motion.div>

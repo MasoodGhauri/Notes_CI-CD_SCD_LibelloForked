@@ -162,7 +162,7 @@ animate='visible'
         initial='hidden'
         whileHover='hover'
         >
-        <Button size='sm' mt={{base:'-40vh', lg: '1px'}} bg='var(--icon-color)' color='var(--bg-color)' _hover={{background: 'var(--icon-shadow-color)'}}  ml={2} onClick={()=> signOut(auth)}>Sign Out</Button>
+        <Button size='sm'  bottom={0} mt={{base:'10px', lg: '1px'}} bg='var(--icon-color)' color='var(--bg-color)' _hover={{background: 'var(--icon-shadow-color)'}}  ml={2} onClick={()=> signOut(auth)}>Sign Out</Button>
         </motion.div>
         </Box> 
     
