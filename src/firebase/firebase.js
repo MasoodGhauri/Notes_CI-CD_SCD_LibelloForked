@@ -1,16 +1,16 @@
-import { getStorage } from 'firebase/storage';
+import { getStorage } from "firebase/storage";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCJvcjOA40Qh2IWCJB7cjgR1tEEHlls_Kk",
-    authDomain: "libello-55da0.firebaseapp.com",
-    projectId: "libello-55da0",
-    storageBucket: "libello-55da0.appspot.com",
-    messagingSenderId: "1031465040829",
-    appId: "1:1031465040829:web:4ea46617d58e69002db0d4",
-    measurementId: "G-23NBKED7RJ"
+  apiKey: "AIzaSyAFPYSmvW-6oxZVj_K-DJTLm4Re7WEAMFs",
+  authDomain: "notes-scd.firebaseapp.com",
+  projectId: "notes-scd",
+  storageBucket: "notes-scd.appspot.com",
+  messagingSenderId: "823112476484",
+  appId: "1:823112476484:web:69679945667604f9035911",
 };
 
 // Initialize Firebase

@@ -1,0 +1,30 @@
+name: Note_CI-CD_SCD_A2_Integration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  integration:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          echo "installing dependencies..."
+          npm install
+
+      - name: Run Unit Tests
+        run: npm test
+        continue-on-error: true
+
+      - name: Run Linting
+        run: |
+          echo "running linting tests..."
+          npm run lint
+        env:
+          CI: true
