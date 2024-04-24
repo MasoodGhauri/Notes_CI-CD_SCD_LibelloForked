@@ -2,7 +2,7 @@ module.exports = {
   extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: "script", // Change sourceType to "script"
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
