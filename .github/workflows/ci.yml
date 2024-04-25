@@ -1,4 +1,4 @@
-name: Note_CI-CD_SCD_A2_Integration
+name: Notes_CI-CD_SCD_A2_Integration
 
 on:
   push:
