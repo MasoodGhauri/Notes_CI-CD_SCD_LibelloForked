@@ -15,6 +15,6 @@ The purpose of forking Libello is to explore and learn about GitHub Actions, con
 - Create new notes
 - Edit existing notes
 - Delete notes
-- Store notes locally using Firebase Firestore
+- Store notes using Firebase Firestore
 - Responsive design for mobile and desktop browsers
 - Firebase Authentication for secure user login
