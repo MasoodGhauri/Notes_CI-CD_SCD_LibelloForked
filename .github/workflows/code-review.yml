@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: Notes_CI-CD_SCD_A2_Code_Review
 
 on:
   push:
