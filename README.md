@@ -18,3 +18,10 @@ The purpose of forking Libello is to explore and learn about GitHub Actions, con
 - Store notes using Firebase Firestore
 - Responsive design for mobile and desktop browsers
 - Firebase Authentication for secure user login
+
+## Deployments
+
+- App
+  https://notes-scd.web.app/
+- Docs
+  https://masoodghauri.github.io/Notes_CI-CD_SCD_LibelloForked/
