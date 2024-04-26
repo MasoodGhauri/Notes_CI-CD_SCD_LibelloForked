@@ -1,4 +1,4 @@
-name: Ping Website
+name: Notes_CI-CD_SCD_A2_Scheduled_Tasks
 
 on:
   schedule:
