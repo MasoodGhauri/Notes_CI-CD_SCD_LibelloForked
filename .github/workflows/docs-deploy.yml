@@ -3,22 +3,26 @@ name: Notes_CI-CD_SCD_A2_Docs_Deploy
 on:
   push:
     branches:
-      - main # Change this to your main branch name
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Create deployment directory
+        run: mkdir -p ${{ github.workspace }}/docs/
 
       - name: Copy README.md to deployment directory
         run: cp README.md ${{ github.workspace }}/docs/
 
       - name: Commit and push changes
         run: |
+          cd ${{ github.workspace }}/docs/
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A
+          git add README.md
           git commit -m "Deploy README.md to GitHub Pages"
-          git push
+          git push origin main
