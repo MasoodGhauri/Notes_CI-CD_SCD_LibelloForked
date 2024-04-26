@@ -4,7 +4,7 @@ Notes is a simple note-taking application forked from [Libello](https://github.c
 
 ## About
 
-[Libello](https://github.com/mvykool/Libello) is a lightweight note-taking app built with React and Firebase Storage. It allows users to create, edit, and delete notes directly in the browser. It has Firebase Authentication for secure user login.
+Notes is a lightweight note-taking app built with React and Firebase Storage. It allows users to create, edit, and delete notes directly in the browser. It has Firebase Authentication for secure user login.
 
 ## Purpose
 
