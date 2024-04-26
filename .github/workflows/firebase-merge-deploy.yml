@@ -4,8 +4,10 @@
 name: Notes_CI-CD_SCD_A2_Firebase_Deployment
 
 on:
-  schedule:
-    - cron: "0 0 * * 0" # Runs every Sunday at midnight UTC
+  workflow_run:
+    workflows: ["Notes_CI-CD_SCD_A2_Integration"]
+    types:
+      - completed
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
