@@ -21,7 +21,5 @@ The purpose of forking Libello is to explore and learn about GitHub Actions, con
 
 ## Deployments
 
-- App
-  https://notes-scd.web.app/
-- Docs
-  https://masoodghauri.github.io/Notes_CI-CD_SCD_LibelloForked/
+- [App](https://notes-scd.web.app/)
+- [Docs](https://masoodghauri.github.io/Notes_CI-CD_SCD_LibelloForked/)
