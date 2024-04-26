@@ -1,4 +1,4 @@
-name: Notes_CI-CD_SCD_A2_Docs_Deploy
+name: Notes_CI-CD_SCD_A2_Static
 
 on:
   push:
