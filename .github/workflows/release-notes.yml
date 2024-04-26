@@ -1,4 +1,4 @@
-name: Releases
+name: Notes_CI-CD_SCD_A2_Releases
 
 on:
   push:
